@@ -36,9 +36,9 @@ function in R. For example, if `X` is a square invertible matrix, then
 # First time, returns calculated inverse and caches
 > cacheSolve(cmx)
      [,1] [,2] [,3]
-     [1,]   -2    8   -5
-     [2,]    3  -11    7
-     [3,]    9  -34   21
+[1,]   -2    8   -5
+[2,]    3  -11    7
+[3,]    9  -34   21
 
 #  Second time onwards, cached inverse is returned
 > cacheSolve(cmx)
