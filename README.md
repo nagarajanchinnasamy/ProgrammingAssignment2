@@ -68,5 +68,11 @@ getting cached data
 [1,]  -24   18    5
 [2,]   20  -15   -4
 [3,]   -5    4    1
+> cacheSolve(cmx)
+getting cached data
+     [,1] [,2] [,3]
+[1,]  -24   18    5
+[2,]   20  -15   -4
+[3,]   -5    4    1
 > 
 ```
