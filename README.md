@@ -33,7 +33,7 @@ function in R. For example, if `X` is a square invertible matrix, then
 # Create the special matrix that caches the inverse of the original
 > cmx <- makeCacheMatrix(mx)
 
-# First time, returns calculated inverse and caches
+# First time, calculates inverse and caches the result
 > cacheSolve(cmx)
      [,1] [,2] [,3]
 [1,]   -2    8   -5
