@@ -26,13 +26,21 @@ function in R. For example, if `X` is a square invertible matrix, then
 
 ```
 > source('cachematrix.R')
+
+# Create original matrix
 > mx <- matrix(c(7, 0, -3, 2, 3, 4, 1, -1, -2), nrow = 3, ncol = 3)
+
+# Create the special matrix that caches the inverse of the original
 > cmx <- makeCacheMatrix(mx)
+
+# First time, returns calculated inverse and caches
 > cacheSolve(cmx)
      [,1] [,2] [,3]
      [1,]   -2    8   -5
      [2,]    3  -11    7
      [3,]    9  -34   21
+
+#  Second time onwards, cached inverse is returned
 > cacheSolve(cmx)
 getting cached data
      [,1] [,2] [,3]
