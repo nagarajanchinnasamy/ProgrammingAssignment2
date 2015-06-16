@@ -24,6 +24,7 @@ function in R. For example, if `X` is a square invertible matrix, then
 
 ### Example Usage
 
+```
 > source('cachematrix.R')
 > mx <- matrix(c(7, 0, -3, 2, 3, 4, 1, -1, -2), nrow = 3, ncol = 3)
 > cmx <- makeCacheMatrix(mx)
@@ -39,3 +40,4 @@ getting cached data
 [2,]    3  -11    7
 [3,]    9  -34   21
 > 
+```
