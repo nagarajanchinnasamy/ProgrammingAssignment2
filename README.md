@@ -47,5 +47,23 @@ getting cached data
 [1,]   -2    8   -5
 [2,]    3  -11    7
 [3,]    9  -34   21
+
+# If you make changes to original matrix, then use set function to recalculate cached inverse
+> mx <- matrix(c(1, 0, 5, 2, 1, 6, 3, 4, 0), nrow = 3, ncol = 3)
+> cacheSolve(cmx)
+getting cached data
+     [,1] [,2] [,3]
+[1,]   -2    8   -5
+[2,]    3  -11    7
+[3,]    9  -34   21
+
+# Did you notice above that cacheSolve returned old cached inverse?
+# Use set function and retry cacheSolve to get recalculated inverse
+> cmx$set(mx)
+> cacheSolve(cmx)
+     [,1] [,2] [,3]
+[1,]  -24   18    5
+[2,]   20  -15   -4
+[3,]   -5    4    1
 > 
 ```
