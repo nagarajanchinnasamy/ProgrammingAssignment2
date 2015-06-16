@@ -21,6 +21,9 @@ Computing the inverse of a square matrix is done with the `solve`
 function in R. For example, if `X` is a square invertible matrix, then
 `solve(X)` returns its inverse.
 
+If you happen to modify the original matrix with which inverse was calculated
+cached, then invoke `cachematrixobject$set(originalmatrix) to re-calculate
+the inverse and update the cache. See the Example Usage.
 
 ### Example Usage
 
