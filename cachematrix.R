@@ -51,7 +51,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ##
 ## Notes:
 ##   1. Assumes that the matrix is invertible
-##   2. Once inverse is cached, its not invalidated on further changes to matrix
+##   2. Once inverse is cached, its not invalidated on further changes
+##      to matrix
 ##
 
 cacheSolve <- function(x, ...) {
